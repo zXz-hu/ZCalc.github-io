@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake</title>
+  <style>
+    body {
+      margin: 0;
+      background: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    canvas {
+      background: #111;
+      touch-action: none;
+    }
+  </style>
+</head>
+<body>
+<canvas id="game" width="300" height="300"></canvas>
+<script>
+const c = document.getElementById("game");
+const ctx = c.getContext("2d");
+ctx.fillStyle = "lime";
+ctx.fillRect(140, 140, 20, 20);
+</script>
+</body>
+</html>
